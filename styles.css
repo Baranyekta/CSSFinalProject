@@ -1,0 +1,168 @@
+/* locally hosted font */
+@font-face {
+    font-family: 'Pacifico';
+    src: url('path/to/pacifico.ttf') format('truetype');
+  }
+  
+  /* externally hosted font */
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+  
+  
+/*style for body */
+/*element selector */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 2%;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    background: linear-gradient(to bottom right, #f867e5, #2697cc);
+  }
+  
+  /*style for header */
+  /* ID selector */
+  #header {
+    background: linear-gradient(to bottom right, #5759d4, #76b2ce);
+    color: #151c80;
+    text-align: center;
+    padding: 3%;
+    border: 5px solid white;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem; 
+    line-height: 1.2; 
+    letter-spacing: 1px; 
+    margin-bottom: 2%;
+}
+  
+  /*style for bio section */
+  /* class selector */
+  .bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+  }
+  
+  .bio img {
+    border-radius: 50%;
+    margin-right: 5%;
+    padding: 1%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bio p {
+    flex: 1;
+    margin-top: 3%;
+    font-size: 1.2rem;
+  }
+  
+  /* Style for skills section */
+  .skills {
+    margin-top: 3%;
+  }
+  
+  .skills h2 {
+    color: #90bcff;
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+  }
+  
+  .skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .skills li {
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+    flex: 1030%;
+    background-color: #6978c0;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Style for projects section */
+  .projects {
+    margin-top: 3%;
+  }
+
+  /* descendant selector */
+  .projects li {
+    margin-bottom: 2%;
+  }  
+  
+  .projects h2 {
+    color: #90bcff;
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+  }
+  
+  .project {
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project h3 {
+    font-size: 1.4rem;
+    margin-bottom: 2%;
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    padding: 1%;
+  }
+  
+  /* Style for contact section */
+  .contact {
+    margin-top: 3%;
+  }
+  
+  .contact h2 {
+    color: #90bcff;
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+  }
+  
+  .contact p {
+    margin-top: 2%;
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    margin-top: 2%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2%;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+  }
+
+  .grid-item {
+    margin: auto;
+    padding: auto;
+    border: 5px solid #ff8f8f;
+    height: auto;
+  }
